@@ -76,7 +76,7 @@ public class Phase1Controller {
             Phase1ResponseEntity entity1 = new Phase1ResponseEntity();
             entity1.setUuid(uid);
             service.changeDeliverMethod(uid);
-            MailUtil.sendMailtoReceiver(toAddress,toAddress,fileName,uid.toString());
+            MailUtil.sendMailtoReceiver(toAddress,name,fileName,uid.toString());
             return entity1;
         } else {
             throw new IllegalArgumentException("File is empty");

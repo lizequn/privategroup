@@ -24,13 +24,11 @@ public class Phase2Controller {
     private Phase2Service service;
 
     @Auth
-    @RequestMapping(value = "/phase2/{id}/{uuid}")
+    @RequestMapping(value = "/phase2/{uuid}")
     @ResponseBody
-    public Phase1RequestEntity getSignOfOrigin(@PathVariable String id, @PathVariable UUID uuid,@RequestHeader("name") String name){
-        if(!name.equals(id)){
-            throw new IllegalArgumentException("from address not fit for the auth name");
-        }
-        if(!authService.checkAuthUUIDWithToUser(uuid,id, FairExchangeStage.STAGE1)){
+    public Phase1RequestEntity getSignOfOrigin( @PathVariable UUID uuid,@RequestHeader("name") String name){
+
+        if(!authService.checkAuthUUIDWithToUser(uuid,name, FairExchangeStage.STAGE1)){
             throw new IllegalArgumentException("this user "+name+"not fit for the uuid "+uuid);
         }
         return service.getOriginSignatureEntity(name,uuid);

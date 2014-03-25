@@ -34,12 +34,10 @@ public class Phase3Controller {
     private Phase3Service service;
 
     @Auth
-    @RequestMapping(value = "/phase3/{id}/{uuid}",method = RequestMethod.POST)
-    public void phase3GetFile(@PathVariable String id,@PathVariable UUID uuid,@RequestHeader("name") String name,@RequestBody Phase3RequestEntity entity,HttpServletResponse response) throws IOException {
-        if(!name.equals(id)){
-            throw new IllegalArgumentException("from address not fit for the auth name");
-        }
-        if(!authService.checkAuthUUIDWithToUser(uuid,id, FairExchangeStage.STAGE2)){
+    @RequestMapping(value = "/phase3/{uuid}",method = RequestMethod.POST)
+    public void phase3GetFile(@PathVariable UUID uuid,@RequestHeader("name") String name,@RequestBody Phase3RequestEntity entity,HttpServletResponse response) throws IOException {
+
+        if(!authService.checkAuthUUIDWithToUser(uuid,name, FairExchangeStage.STAGE2)){
             throw new IllegalArgumentException("this user "+name+"not fit for the uuid "+uuid);
         }
         FileEntity entity1 = service.checkSignatureGetFile(uuid,entity);

@@ -38,7 +38,7 @@ public class MailUtil {
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse(address));
             message.setSubject("Receive File From TTP");
-            message.setText("you should receive a file from TTP from:" + from +" file name :"+name+" id to achieve file(use by command line) "+link);
+            message.setText("you should receive a file from TTP from: " + from +" file name :"+name+" id to receive file(use by command line) "+link);
 
 
             Transport.send(message);
@@ -79,7 +79,7 @@ public class MailUtil {
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse(address));
             message.setSubject("Receive File From TTP");
-            message.setText("you should receive a receipt from TTP with uid:" + uid +" id to achieve file(use by command line) "+link);
+            message.setText("you should receive a receipt from TTP with uid:" + uid +" id to receive file(use by command line) "+link);
 
 
             Transport.send(message);
