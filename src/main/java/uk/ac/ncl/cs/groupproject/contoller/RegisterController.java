@@ -22,10 +22,13 @@ public class RegisterController {
     @Autowired
     private RegisterService service;
 
-    @RequestMapping(value = "/register/{id}/{email}")
+    @RequestMapping(value = "/register/{id}")
     @ResponseBody
-    public RegisterResponseEntity register(@PathVariable String id,@PathVariable String email){
+    public RegisterResponseEntity register(@PathVariable String id){
         log.info("register "+id);
+        if(!verify(id)){
+            throw new IllegalArgumentException("id is not in email format");
+        }
         return service.registerUser(id);
     }
     private boolean verify(String email){

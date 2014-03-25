@@ -12,6 +12,7 @@ import uk.ac.ncl.cs.groupproject.cyptoutil.SignUtil;
 import uk.ac.ncl.cs.groupproject.dao.FileDao;
 import uk.ac.ncl.cs.groupproject.dao.FileEntity;
 import uk.ac.ncl.cs.groupproject.entity.Phase3RequestEntity;
+import uk.ac.ncl.cs.groupproject.mail.MailUtil;
 import uk.ac.ncl.cs.groupproject.services.Phase3Service;
 
 import java.io.IOException;
@@ -47,6 +48,9 @@ public class Phase3ServiceImpl implements Phase3Service {
         communication.setStage(FairExchangeStage.STAGE4);
         communication.setReceiptHash(entity.getReceiptHash());
         CommunicationManager.getInstance().update(uuid);
+        if(communication.getDeliver() == 1){
+            MailUtil.sendMailToSender(communication.getFromAddress(),communication.getUuid().toString(),communication.getUuid().toString());
+        }
         return dao.getFile(uuid.toString());
     }
 

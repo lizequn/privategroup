@@ -24,7 +24,7 @@ public class Phase2Controller {
     private Phase2Service service;
 
     @Auth
-    @RequestMapping(value = "/phase2/{id}/{uuid}", method = RequestMethod.POST)
+    @RequestMapping(value = "/phase2/{id}/{uuid}")
     @ResponseBody
     public Phase1RequestEntity getSignOfOrigin(@PathVariable String id, @PathVariable UUID uuid,@RequestHeader("name") String name){
         if(!name.equals(id)){

@@ -13,4 +13,5 @@ import java.util.UUID;
 public interface Phase1Service {
     UUID checkSignature(Phase1RequestEntity entity,byte[] file);
     void storeDoc(UUID uuid,String fileName,InputStream file) throws IOException;
+    void changeDeliverMethod(UUID uuid);
 }

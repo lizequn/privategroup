@@ -78,4 +78,9 @@ public class Phase1ServiceImpl implements Phase1Service {
 
 
     }
+
+    @Override
+    public void changeDeliverMethod(UUID uuid) {
+        CommunicationManager.getInstance().getProcess(uuid).setDeliver(1);
+    }
 }

@@ -18,6 +18,8 @@ public class FairExchangeCommunication {
     private final String originHash;
     private String receiptHash;
     private final long createTime;
+    private int deliver;
+
 
 
     private Phase1RequestEntity entity;
@@ -69,6 +71,14 @@ public class FairExchangeCommunication {
             entity.setSignedHash(originHash);
         }
         return entity;
+    }
+
+    public int getDeliver() {
+        return deliver;
+    }
+
+    public void setDeliver(int deliver) {
+        this.deliver = deliver;
     }
 
     public void setEntity(Phase1RequestEntity entity) {
