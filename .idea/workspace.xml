@@ -5,14 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26995824-3aad-4a3e-b974-f21dc39d4c3a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/groupproject/contoller/AbortController.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/groupproject/contoller/AbortController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/AwsCredentials.properties" afterPath="$PROJECT_DIR$/src/main/resources/AwsCredentials.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/groupproject/mail/MailUtil.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/groupproject/mail/MailUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/groupproject/contoller/Phase1Controller.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/groupproject/contoller/Phase1Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/groupproject/contoller/Phase2Controller.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/groupproject/contoller/Phase2Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/groupproject/contoller/Phase3Controller.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/groupproject/contoller/Phase3Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/groupproject/cyptoutil/test4RSA.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/groupproject/cyptoutil/test4RSA.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GroupProject1.iws" />
@@ -34,7 +26,7 @@
     <file path="$PROJECT_DIR$/../GroupProject/src/main/java/uk/ac/ncl/cs/group1/dao/SimulateDB.java" changelist="26995824-3aad-4a3e-b974-f21dc39d4c3a" time="1394193454347" ignored="false" />
     <file path="$PROJECT_DIR$/../GroupProject/src/main/java/uk/ac/ncl/cs/group1/service/impl/RegisterServiceImpl.java" changelist="26995824-3aad-4a3e-b974-f21dc39d4c3a" time="1394193468609" ignored="false" />
     <file path="/RegisterServiceImpl.java" changelist="26995824-3aad-4a3e-b974-f21dc39d4c3a" time="1395017610194" ignored="false" />
-    <file path="/Dummy.txt" changelist="26995824-3aad-4a3e-b974-f21dc39d4c3a" time="1395766309216" ignored="false" />
+    <file path="/Dummy.txt" changelist="26995824-3aad-4a3e-b974-f21dc39d4c3a" time="1395772591375" ignored="false" />
     <file path="$PROJECT_DIR$/../GroupProject/.idea/workspace.xml" changelist="26995824-3aad-4a3e-b974-f21dc39d4c3a" time="1394211779140" ignored="false" />
     <file path="/RegisterResponseEntity.java" changelist="26995824-3aad-4a3e-b974-f21dc39d4c3a" time="1395017519000" ignored="false" />
     <file path="/RegisterDaoImpl.java" changelist="26995824-3aad-4a3e-b974-f21dc39d4c3a" time="1395238202826" ignored="false" />
@@ -1252,7 +1244,11 @@
       <created>1395421158343</created>
       <updated>1395421158343</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="finish 1">
+      <created>1395772602603</created>
+      <updated>1395772602603</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
